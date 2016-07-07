@@ -3,7 +3,7 @@ package Code::TidyAll::Plugin::ESLint;
 use strict;
 use warnings;
 
-our $VERSION = '1.000000';
+our $VERSION = '1.000001';
 
 use IPC::Run3 qw( run3 );
 use Moo;
