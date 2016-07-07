@@ -37,6 +37,5 @@ on 'develop' => sub {
   requires "Test::Pod::Coverage" => "1.08";
   requires "Test::Portability::Files" => "0";
   requires "Test::Spelling" => "0.12";
-  requires "Test::Synopsis" => "0";
   requires "Test::Version" => "1";
 };
