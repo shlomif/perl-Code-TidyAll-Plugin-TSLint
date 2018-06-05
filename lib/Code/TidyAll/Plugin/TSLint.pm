@@ -70,4 +70,9 @@ Full path to tslint
 
 =back
 
+=head1 CREDITS
+
+Based on L<https://metacpan.org/release/Code-TidyAll-Plugin-ESLint> by
+MaxMind, Inc. Modified by Shlomi Fish while disclaiming all rights.
+
 =cut
