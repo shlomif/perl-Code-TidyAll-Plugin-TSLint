@@ -1,5 +1,4 @@
-{{$NEXT}}
 
-1.000000 2016-07-07
+0.001   2018-06-05
 
-- Initial release.
+    - First release - forked from ::ESLint.
