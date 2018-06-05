@@ -1,32 +1,31 @@
 # NAME
 
-Code::TidyAll::Plugin::ESLint - Use eslint with tidyall
+Code::TidyAll::Plugin::TSLint - Use tslint with tidyall
 
 # SYNOPSIS
 
     In configuration:
 
-    [ESLint]
+    [TSLint]
     select = static/**/*.js
-    argv = -c $ROOT/.eslintrc --color
+    argv = -c $ROOT/.tslintrc --color
 
 # DESCRIPTION
 
-Runs [eslint](http://eslint.org//), pluggable linting utility for JavaScript
-and JSX.
+Runs tslint, a pluggable linting utility for TypeScript.
 
 # INSTALLATION
 
 Install [npm](https://npmjs.org/), then run
 
-    npm install eslint
+    npm install tslint
 
 # CONFIGURATION
 
 - argv
 
-    Arguments to pass to eslint. Use `--color` to force color output.
+    Arguments to pass to tslint. Use `--color` to force color output.
 
 - cmd
 
-    Full path to eslint
+    Full path to tslint

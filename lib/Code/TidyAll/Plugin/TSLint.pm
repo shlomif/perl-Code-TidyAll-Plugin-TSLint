@@ -1,4 +1,4 @@
-package Code::TidyAll::Plugin::ESLint;
+package Code::TidyAll::Plugin::TSLint;
 
 use strict;
 use warnings;
@@ -10,7 +10,7 @@ use Moo;
 
 extends 'Code::TidyAll::Plugin';
 
-sub _build_cmd { 'eslint' }
+sub _build_cmd { 'tslint' }
 
 # We use transform-file in order to support --fix
 sub transform_file {
@@ -34,27 +34,27 @@ sub transform_file {
 
 =head1 NAME
 
-Code::TidyAll::Plugin::ESLint - Use eslint with tidyall
+Code::TidyAll::Plugin::TSLint - Use tslint with tidyall
 
 
 =head1 SYNOPSIS
 
    In configuration:
 
-   [ESLint]
-   select = static/**/*.js
-   argv = -c $ROOT/.eslintrc --color
+   [TSLint]
+   select = static/**/*.ts
+   argv = -c $ROOT/.tslintrc --color
 
 =head1 DESCRIPTION
 
-Runs L<eslint|http://eslint.org//>, pluggable linting utility for JavaScript
-and JSX.
+Runs L<tslint|https://github.com/palantir/tslint>, pluggable linting utility
+for TypeScript.
 
 =head1 INSTALLATION
 
 Install L<npm|https://npmjs.org/>, then run
 
-    npm install eslint
+    npm install tslint
 
 =head1 CONFIGURATION
 
@@ -62,11 +62,11 @@ Install L<npm|https://npmjs.org/>, then run
 
 =item argv
 
-Arguments to pass to eslint. Use C<--color> to force color output.
+Arguments to pass to tslint. Use C<--color> to force color output.
 
 =item cmd
 
-Full path to eslint
+Full path to tslint
 
 =back
 
